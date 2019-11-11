@@ -13,7 +13,20 @@
 <body>
     <div class="weather"></div>
     Please enter your city: <input type="text" value="Nashville" id="myCityId">
-    <button onclick="fetchWeather">Tell me the weather!</button>
+    Or search by zip: <input type="text" value="" id="zipInput"><br><br>
+    <button onclick="fetchWeather()">Tell me the weather!</button>
+    <button onclick="fetchForecast()">Get the forecast!</button>
+
+    <div id="forecast">
+        <h1 id="forecastHeader"></h1>
+        <div class="days" id="days">
+            <div id="day1" class="dayDivs"></div>
+            <div id="day2" class="dayDivs"></div>
+            <div id="day3" class="dayDivs"></div>
+            <div id="day4" class="dayDivs"></div>
+            <div id="day5" class="dayDivs"></div>
+        </div>
+    </div>
 
     <script src="script.js"></script>
 </body>
